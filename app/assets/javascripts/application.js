@@ -14,6 +14,14 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= jquery
+//= require bootstrap
+//= require jquery.flexslider
+
+  $(document).ready(function(){ 
+    $('.flexslider').flexslider();
+  });
+  
 var slideIndex = 1;
 showSlides(slideIndex);
 

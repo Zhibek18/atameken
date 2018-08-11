@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -131,7 +133,7 @@ img::selection {
 
 .jumbo, .jumbo1 {
   height: 100vh;
-  background-image: url('./img/geoblue.jpg');
+  background-image: url('https://image.ibb.co/nM3FBU/geoblue.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -183,7 +185,7 @@ img::selection {
   height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('./img/11.jpg');
+  background-image: url('https://image.ibb.co/dGkuO9/man.jpg');
   background-position: center -100px;
   border-top: solid 8px;
   border-bottom: solid 8px;
@@ -294,7 +296,7 @@ img::selection {
 
 .suggest {
   height: 100vh;
-  background-image: url('./img/suggestblue.jpg');
+  background-image: url('https://image.ibb.co/ebH8WU/suggestblue.jpg');
   background-size: cover;
   display: flex;
   align-items: center;
@@ -437,7 +439,7 @@ img::selection {
 
 .contacts {
   height: 50vh;
-  background-image: url('./img/contacts.jpg');
+  background-image: url("https://image.ibb.co/h34Yy9/contacts.jpg");
   background-size: cover;
   overflow:visible;
 }
@@ -465,10 +467,7 @@ img::selection {
   top: 42%;
 }
 
-
-
-
-
+////////////////////////////////////////////////////////
 
 
 * {
@@ -481,8 +480,11 @@ img::selection {
 }
 
 /* Hide the images by default */
-.mySlides {
-  display: none;
+.first{
+width:100%; height: 100%; background-image: url("https://image.ibb.co/nCHxQp/image5.jpg"); background-size: cover
+}
+.mySlides { 
+/*  display: none;*/
 }
 
 /* Add a pointer when hovering over the thumbnail images */
