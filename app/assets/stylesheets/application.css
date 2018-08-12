@@ -13,7 +13,536 @@
  *= require_tree .
  *= require_self
  *= require flexslider
+ *= require font-awesome
  */
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial !important;
+}
+
+*::selection {
+  background-color: rgb(110, 110, 110);
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+img::selection {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+        /* Header start*/
+
+@media screen and (max-width: 1205px)
+{
+  .navbargrid{
+    height: 80px;
+  }
+
+  .menugrid {
+    display: none !important;
+  }
+  #menuicon {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .responsivemenu {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+}
+
+.header {
+  background-color: #f5f5f5;
+  width: 100%;
+  position: sticky;
+  top: -1px;
+  z-index: 1;
+}
+
+.navbargrid {
+  border-bottom: solid 2px;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.socialmedia img {
+  height: 35px;
+  margin-right: 20px;
+}
+
+.navbargrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#menuicon{
+  display: none;
+  cursor: pointer;
+  margin-top: 11.5px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+    height: 35px;
+}
+#toggle {
+  display: none;
+}
+#toggle:checked + .responsivemenu {
+  display: grid !important;
+}
+
+.menugrid {
+  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  margin-left: 20px;
+}
+
+.responsivemenu {
+  display: none;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.menuboxp a{
+  font-size: 12px !important;
+}
+
+.menubox {
+  font-size: 16px;
+}
+
+.header a::selection {
+  background-color: rgb(105, 105, 105);
+}
+
+.header a {
+  color: rgb(1, 24, 69);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color: rgb(97, 150, 252);
+}
+
+        /* Header end*/
+
+.jumbo, .jumbo1 {
+  height: 100vh;
+  background-image: url('https://image.ibb.co/nM3FBU/geoblue.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbo1 {
+  display: none;
+  text-align: center;
+}
+
+.jumbogrid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.jumbobox {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.jumbobox img {
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.jumbo h1 {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px){
+  .container1 {
+    display: none;
+  }
+  .jumbo1 {
+    display: grid !important;
+  }
+}
+
+        /* About start*/
+
+.about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url('https://image.ibb.co/dGkuO9/man.jpg');
+  background-position: center -100px;
+  border-top: solid 8px;
+  border-bottom: solid 8px;
+  border-color: rgb(1, 24, 69);
+}
+
+.about h1 {
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  position: relative;
+  bottom: 60px;
+}
+
+.agrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  background-size: cover;
+  background-position: right;
+}
+
+.abox {
+  font-size: 25px;
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.abox:nth-child(1) {
+  background-color: rgba(1, 24, 69, 0.7);
+  text-align: center;
+}
+
+.abox:nth-child(4) {
+  background-color: rgba(1, 24, 69, 0.7);
+  text-align: center;
+}
+
+@media screen and (max-width: 1024) {
+  .about {
+    margin: 50px 0;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1615px) {
+  p{
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 1162px) {
+  p{
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  p{
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .agrid {
+    display: block;
+    grid-gap: 0;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .agrid {
+    display: block;
+    grid-gap: 0;
+  }
+
+  .about.container {
+    width: 100%;
+  }
+  .abox {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .abox:nth-child(2) {
+    padding: 0;
+  }
+  .abox:nth-child(3) {
+    padding: 0;
+  }
+
+  .about h1 {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    position: block;
+  }
+}
+
+        /* About end*/
+
+
+        /* Suggest strat */
+
+.suggest {
+  height: 100vh;
+  background-image: url('https://image.ibb.co/ebH8WU/suggestblue.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.suggest h1 {
+  font-size: 40px;
+
+}
+
+.sgrid {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 425px){
+  .sgrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 932px){
+  .sgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 910px){
+  .sbox {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .sgrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.sbox:nth-child(1){
+  grid-column: 1 / -1;
+}
+
+.sbox {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sbox p {
+  font-size: 20px;
+}
+
+.sbox img {
+    margin-right: 20px;
+    height: 60px;
+}
+
+        /* Suggest end */
+
+
+        /* Ucan start */
+
+.ucan{
+  height: 150vh;
+  display: flex;
+}
+
+.ucan h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.uboxes {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+.ubox {
+  transition: all 0.5s;
+  border-radius: 20px;
+}
+
+.ubox1 {
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+}
+
+.uboxes img{
+  height: 100px;
+}
+
+.uboxes p {
+  font-size: 20px;
+  padding: 50px;
+}
+
+.ubox:hover {
+  background-color: rgba(1, 44, 128, 0.5);
+}
+
+.ubox:hover img{
+  animation: rotateicons;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+
+@keyframes rotateicons {
+  from {transform: rotate(-5deg)}
+  to {transform: rotate(+10deg)}
+}
+
+@media screen and (max-width: 933px) {
+  .uboxes {
+    grid-template-columns: 1fr;
+  }
+
+  .ubox p{
+    font-size: 18px !important;
+  }
+
+  .ucan {
+    height: auto;
+    margin: 50px 0;
+  }
+}
+
+        /* Ucan end */
+
+
+        /* Contacts */
+
+.contacts {
+  height: 80vh;
+  background-image: url("https://image.ibb.co/h34Yy9/contacts.jpg");
+  background-size: cover;
+  overflow:visible;
+}
+
+.textboxc {
+  text-align: center;
+  position: relative;
+  top: 130px;
+  font-size: 20px;
+  color: #fff;
+}
+
+
+        /* Footer */
+
+.footer {
+  height: 100px;
+  background-color: rgb(1, 24, 69);
+  color: #fff;
+  text-align: center;
+}
+
+.footer p {
+  position: relative;
+  top: 42%;
+}
+
+////////////////////////////////////////////////////////
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container1 {
+//  position: relative;
+}
+
+/* Hide the images by default */
+.first{
+width:100%; height: 100%; background-image: url("https://image.ibb.co/nCHxQp/image5.jpg"); background-size: cover
+}
+.mySlides { 
+/*  display: none;*/
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: +50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
