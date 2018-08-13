@@ -24,6 +24,7 @@
 
 img::selection {
   background-color: rgba(255, 255, 255, 0) !important;
+
 }
 
         /* my
@@ -164,6 +165,7 @@ img::selection {
   display: flex;
   justify-content: center;
   color: #fff;
+  font-family: Arial !important;
 }
 
 .jumbobox img {
@@ -206,12 +208,11 @@ padding-top: 50%;
 
 .about h1 {
   font-size: 40px;
-  color: #000;
+  color: rgb(1, 24, 69);
   text-align: center;
   position: relative;
   bottom: 60px;
 }
-
 .agrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -293,12 +294,6 @@ padding-top: 50%;
     padding: 0;
   }
 
-  .about h1 {
-    font-size: 40px;
-    color: #000;
-    text-align: center;
-    position: block;
-  }
 }
 
         /* About end*/
