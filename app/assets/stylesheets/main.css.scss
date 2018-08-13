@@ -14,11 +14,20 @@
   margin: auto;
 }
 
+.navbar-nav > li {
+    font-size: 16px;
+    font-family: Arial !important; 
+    color: rgba(1, 24, 69, 0);   
+
+}
+
+
 img::selection {
   background-color: rgba(255, 255, 255, 0) !important;
 }
 
-        /* Header start*/
+        /* my
+      Header start*/
 
 @media screen and (max-width: 1205px)
 {
@@ -41,7 +50,7 @@ img::selection {
   }
 }
 
-.header {
+.myheader {
   background-color: #f5f5f5;
   width: 100%;
   position: sticky;
@@ -113,21 +122,22 @@ img::selection {
   font-size: 16px;
 }
 
-.header a::selection {
+.myheader a::selection {
   background-color: rgb(105, 105, 105);
 }
 
-.header a {
+.myheader a {
   color: rgb(1, 24, 69);
   text-decoration: none;
   font-weight: bold;
 }
 
-.header a:hover {
+.myheader a:hover {
   color: rgb(97, 150, 252);
 }
 
-        /* Header end*/
+        /* my
+      Header end*/
 
 .jumbo, .jumbo1 {
   height: 100vh;
@@ -185,9 +195,13 @@ img::selection {
   align-items: center;
   background-image: url('https://image.ibb.co/dGkuO9/man.jpg');
   background-position: center -100px;
-  border-top: solid 8px;
+  /*border-top: solid 8px;
   border-bottom: solid 8px;
-  border-color: rgb(1, 24, 69);
+  border-color: rgb(1, 24, 69);*/
+}
+
+.left-arrow,.right-arrow{
+padding-top: 50%;
 }
 
 .about h1 {
@@ -327,6 +341,7 @@ img::selection {
 @media screen and (max-width: 910px){
   .sbox {
     font-size: 15px;
+    text-align: center !important;
   }
 }
 
